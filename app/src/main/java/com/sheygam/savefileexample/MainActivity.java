@@ -51,12 +51,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public Bitmap loadBitmapFromView(View view) {
-//        Bitmap bitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(), Bitmap.Config.ARGB_8888);
-//
-//        Canvas canvas = new Canvas(bitmap);
-//        view.layout(0, 0, view.getLayoutParams().width, view.getLayoutParams().height);
-//        view.draw(canvas);
-//        return bitmap;
         Bitmap returnedBitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(),Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(returnedBitmap);
         Drawable bgDrawable =view.getBackground();
